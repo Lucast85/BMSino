@@ -7,7 +7,7 @@
 
 #include "AD7280A.h"
 #include "Arduino.h"
-#include "..\BMSino.h"
+#include "..\..\BMSino.h"
 #include <SPI.h>
 
 

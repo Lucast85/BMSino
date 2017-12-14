@@ -8,9 +8,9 @@
 #ifndef BMSINO_H
 #define BMSINO_H
 
-#include "libraries\thermistor.h"
-#include "libraries\current_sensor.h"
-#include "libraries\AD7280A.h"
+#include "src\libraries\thermistor.h"
+#include "src\libraries\current_sensor.h"
+#include "src\libraries\AD7280A.h"
 
 
 // BMSino pinout
