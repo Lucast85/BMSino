@@ -3,7 +3,7 @@
 #include <stdint.h>
 
 #include "BMSino.h"
-#include "debug_f\scope.h"
+#include "src\debug_f\scope.h"
 
 
 
