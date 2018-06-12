@@ -13,7 +13,7 @@
 #ifdef USE_NTC_LOWSIDE_B3950_5V_10Kohm
 	//**************************************************************
 	// MF58 by Cantherm 10kohm, B3950
-	// http://www.cantherm.com/media/productPDF/cantherm_mf58_1.pdf
+	// http://www.cantherm.com/wp-content/uploads/2017/05/cantherm_mf58_1.pdf
 	// ADC : 10 bit
 	//**************************************************************
 	//							 |
@@ -27,22 +27,22 @@
 	//**************************************************************
 #define MF58_LUT_SIZE 16
 static const lut_t MF58[MF58_LUT_SIZE] ={
-		{.ADC_value=	35		, .Temperature=	2009	},	    // 	0.17	V	@	125.56	캜
-		{.ADC_value=	45		, .Temperature=	1845	},	    // 	0.22	V	@	115.30	캜
-		{.ADC_value=	58		, .Temperature=	1686	},	    // 	0.28	V	@	105.36	캜
-		{.ADC_value=	75		, .Temperature=	1530	},	    // 	0.37	V	@	95.65	캜
-		{.ADC_value=	98		, .Temperature=	1374	},	    // 	0.48	V	@	85.86	캜
-		{.ADC_value=	129		, .Temperature=	1217	},	    // 	0.63	V	@	76.06	캜
-		{.ADC_value=	170		, .Temperature=	1062	},	    // 	0.83	V	@	66.37	캜
-		{.ADC_value=	225		, .Temperature=	905		},	    // 	1.10	V	@	56.54	캜
-		{.ADC_value=	296		, .Temperature=	748		},	    // 	1.45	V	@	46.73	캜
-		{.ADC_value=	384		, .Temperature=	591		},	    // 	1.88	V	@	36.96	캜
-		{.ADC_value=	487		, .Temperature=	435		},	    // 	2.38	V	@	27.22	캜
-		{.ADC_value=	599		, .Temperature=	280		},	    // 	2.92	V	@	17.47	캜
-		{.ADC_value=	710		, .Temperature=	123		},	    // 	3.47	V	@	7.70	캜
-		{.ADC_value=	808		, .Temperature=	-32		},	    // 	3.95	V	@	-2.00	캜
-		{.ADC_value=	886		, .Temperature=	-187	},	    // 	4.33	V	@	-11.70	캜
-		{.ADC_value=	942		, .Temperature=	-342	},	    // 	4.60	V	@	-21.39	캜
+		{.ADC_value=	35		, .Temperature=	2009	},	    // 	0.17	V	@	125.56	째C
+		{.ADC_value=	45		, .Temperature=	1845	},	    // 	0.22	V	@	115.30	째C
+		{.ADC_value=	58		, .Temperature=	1686	},	    // 	0.28	V	@	105.36	째C
+		{.ADC_value=	75		, .Temperature=	1530	},	    // 	0.37	V	@	95.65	째C
+		{.ADC_value=	98		, .Temperature=	1374	},	    // 	0.48	V	@	85.86	째C
+		{.ADC_value=	129		, .Temperature=	1217	},	    // 	0.63	V	@	76.06	째C
+		{.ADC_value=	170		, .Temperature=	1062	},	    // 	0.83	V	@	66.37	째C
+		{.ADC_value=	225		, .Temperature=	905		},	    // 	1.10	V	@	56.54	째C
+		{.ADC_value=	296		, .Temperature=	748		},	    // 	1.45	V	@	46.73	째C
+		{.ADC_value=	384		, .Temperature=	591		},	    // 	1.88	V	@	36.96	째C
+		{.ADC_value=	487		, .Temperature=	435		},	    // 	2.38	V	@	27.22	째C
+		{.ADC_value=	599		, .Temperature=	280		},	    // 	2.92	V	@	17.47	째C
+		{.ADC_value=	710		, .Temperature=	123		},	    // 	3.47	V	@	7.70	째C
+		{.ADC_value=	808		, .Temperature=	-32		},	    // 	3.95	V	@	-2.00	째C
+		{.ADC_value=	886		, .Temperature=	-187	},	    // 	4.33	V	@	-11.70	째C
+		{.ADC_value=	942		, .Temperature=	-342	},	    // 	4.60	V	@	-21.39	째C
 };
 #endif
 
@@ -63,22 +63,22 @@ static const lut_t MF58[MF58_LUT_SIZE] ={
 	//**************************************************************
 #define NTCLE100E3103JB0_LUT_SIZE 16
 static const lut_t NTCLE100E3103JB0[NTCLE100E3103JB0_LUT_SIZE] ={
-		{.ADC_value=	138		, .Temperature=	2004	},	    // 	0.18	V	@	125.24	캜
-		{.ADC_value=	176		, .Temperature=	1846	},	    // 	0.22	V	@	115.40	캜
-		{.ADC_value=	226		, .Temperature=	1691	},	    // 	0.29	V	@	105.67	캜
-		{.ADC_value=	293		, .Temperature=	1535	},	    // 	0.37	V	@	95.93	캜
-		{.ADC_value=	383		, .Temperature=	1379	},	    // 	0.49	V	@	86.19	캜
-		{.ADC_value=	504		, .Temperature=	1224	},	    // 	0.64	V	@	76.48	캜
-		{.ADC_value=	666		, .Temperature=	1068	},	    // 	0.85	V	@	66.77	캜
-		{.ADC_value=	881		, .Temperature=	913		},	    // 	1.12	V	@	57.04	캜
-		{.ADC_value=	1159	, .Temperature=	757		},	    // 	1.47	V	@	47.34	캜
-		{.ADC_value=	1506	, .Temperature=	602		},	    // 	1.91	V	@	37.63	캜
-		{.ADC_value=	1915	, .Temperature=	447		},	    // 	2.43	V	@	27.94	캜
-		{.ADC_value=	2362	, .Temperature=	292		},	    // 	3.00	V	@	18.25	캜
-		{.ADC_value=	2808	, .Temperature=	137		},	    // 	3.56	V	@	8.54	캜
-		{.ADC_value=	3207	, .Temperature=	-19		},	    // 	4.07	V	@	-1.16	캜
-		{.ADC_value=	3527	, .Temperature=	-174	},	    // 	4.48	V	@	-10.87	캜
-		{.ADC_value=	3758	, .Temperature=	-330	},	    // 	4.77	V	@	-20.60	캜
+		{.ADC_value=	138		, .Temperature=	2004	},	    // 	0.18	V	@	125.24	째C
+		{.ADC_value=	176		, .Temperature=	1846	},	    // 	0.22	V	@	115.40	째C
+		{.ADC_value=	226		, .Temperature=	1691	},	    // 	0.29	V	@	105.67	째C
+		{.ADC_value=	293		, .Temperature=	1535	},	    // 	0.37	V	@	95.93	째C
+		{.ADC_value=	383		, .Temperature=	1379	},	    // 	0.49	V	@	86.19	째C
+		{.ADC_value=	504		, .Temperature=	1224	},	    // 	0.64	V	@	76.48	째C
+		{.ADC_value=	666		, .Temperature=	1068	},	    // 	0.85	V	@	66.77	째C
+		{.ADC_value=	881		, .Temperature=	913		},	    // 	1.12	V	@	57.04	째C
+		{.ADC_value=	1159	, .Temperature=	757		},	    // 	1.47	V	@	47.34	째C
+		{.ADC_value=	1506	, .Temperature=	602		},	    // 	1.91	V	@	37.63	째C
+		{.ADC_value=	1915	, .Temperature=	447		},	    // 	2.43	V	@	27.94	째C
+		{.ADC_value=	2362	, .Temperature=	292		},	    // 	3.00	V	@	18.25	째C
+		{.ADC_value=	2808	, .Temperature=	137		},	    // 	3.56	V	@	8.54	째C
+		{.ADC_value=	3207	, .Temperature=	-19		},	    // 	4.07	V	@	-1.16	째C
+		{.ADC_value=	3527	, .Temperature=	-174	},	    // 	4.48	V	@	-10.87	째C
+		{.ADC_value=	3758	, .Temperature=	-330	},	    // 	4.77	V	@	-20.60	째C
 };
 #endif
 
@@ -100,22 +100,22 @@ static const lut_t NTCLE100E3103JB0[NTCLE100E3103JB0_LUT_SIZE] ={
 
 #define NTCS0603E3104JXT_LUT_SIZE 16
 static const lut_t NTCS0603E3104JXT[NTCS0603E3104JXT_LUT_SIZE] ={
-		{.ADC_value=	31		, .Temperature=	2008	},	    // 	0.15	V	@	125.50	캜
-		{.ADC_value=	40		, .Temperature=	1848	},	    // 	0.20	V	@	115.52	캜
-		{.ADC_value=	52		, .Temperature=	1691	},	    // 	0.25	V	@	105.66	캜
-		{.ADC_value=	68		, .Temperature=	1535	},	    // 	0.33	V	@	95.95	캜
-		{.ADC_value=	90		, .Temperature=	1378	},	    // 	0.44	V	@	86.13	캜
-		{.ADC_value=	120		, .Temperature=	1221	},	    // 	0.59	V	@	76.32	캜
-		{.ADC_value=	161		, .Temperature=	1063	},	    // 	0.79	V	@	66.47	캜
-		{.ADC_value=	216		, .Temperature=	906		},	    // 	1.05	V	@	56.64	캜
-		{.ADC_value=	288		, .Temperature=	749		},	    // 	1.41	V	@	46.83	캜
-		{.ADC_value=	378		, .Temperature=	593		},	    // 	1.85	V	@	37.09	캜
-		{.ADC_value=	484		, .Temperature=	438		},	    // 	2.36	V	@	27.39	캜
-		{.ADC_value=	600		, .Temperature=	283		},	    // 	2.93	V	@	17.66	캜
-		{.ADC_value=	714		, .Temperature=	127		},	    // 	3.49	V	@	7.95	캜
-		{.ADC_value=	815		, .Temperature=	-30		},	    // 	3.98	V	@	0.00	캜
-		{.ADC_value=	894		, .Temperature=	-187	},	    // 	4.37	V	@	-11.66	캜
-		{.ADC_value=	949		, .Temperature=	-343	},	    // 	4.63	V	@	-21.45	캜
+		{.ADC_value=	31		, .Temperature=	2008	},	    // 	0.15	V	@	125.50	째C
+		{.ADC_value=	40		, .Temperature=	1848	},	    // 	0.20	V	@	115.52	째C
+		{.ADC_value=	52		, .Temperature=	1691	},	    // 	0.25	V	@	105.66	째C
+		{.ADC_value=	68		, .Temperature=	1535	},	    // 	0.33	V	@	95.95	째C
+		{.ADC_value=	90		, .Temperature=	1378	},	    // 	0.44	V	@	86.13	째C
+		{.ADC_value=	120		, .Temperature=	1221	},	    // 	0.59	V	@	76.32	째C
+		{.ADC_value=	161		, .Temperature=	1063	},	    // 	0.79	V	@	66.47	째C
+		{.ADC_value=	216		, .Temperature=	906		},	    // 	1.05	V	@	56.64	째C
+		{.ADC_value=	288		, .Temperature=	749		},	    // 	1.41	V	@	46.83	째C
+		{.ADC_value=	378		, .Temperature=	593		},	    // 	1.85	V	@	37.09	째C
+		{.ADC_value=	484		, .Temperature=	438		},	    // 	2.36	V	@	27.39	째C
+		{.ADC_value=	600		, .Temperature=	283		},	    // 	2.93	V	@	17.66	째C
+		{.ADC_value=	714		, .Temperature=	127		},	    // 	3.49	V	@	7.95	째C
+		{.ADC_value=	815		, .Temperature=	-30		},	    // 	3.98	V	@	0.00	째C
+		{.ADC_value=	894		, .Temperature=	-187	},	    // 	4.37	V	@	-11.66	째C
+		{.ADC_value=	949		, .Temperature=	-343	},	    // 	4.63	V	@	-21.45	째C
 };
 #endif
 
